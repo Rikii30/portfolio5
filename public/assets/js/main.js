@@ -137,25 +137,3 @@ window.addEventListener("scroll", scrollUp);
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  var modal = document.getElementById('messageModal');
-  var img = document.querySelector('.home__blob-img');
-  var messageText = document.getElementById('messageText');
-  var span = document.getElementsByClassName('close')[0];
-
-  img.onclick = function () {
-      modal.style.display = 'block';
-      // You can set the message content dynamically here
-      messageText.innerHTML = 'I am an Upcoming MS. Graduate offering a strong foundation in Computer Science.  I have always had a keen interest in coding and technology since childhood which made me choose this course. I am a motivated student who would love to explore and learn more about IT and computers';
-  }
-
-  span.onclick = function () {
-      modal.style.display = 'none';
-  }
-
-  window.onclick = function (event) {
-      if (event.target == modal) {
-          modal.style.display = 'none';
-      }
-  }
-});
